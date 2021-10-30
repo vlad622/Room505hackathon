@@ -87,6 +87,7 @@ Library\Bee\artifacts\movedfrom\UnityEngine.WindModule.dll_3188497009986934730.m
 Library\Bee\artifacts\movedfrom\UnityEngine.XRModule.dll_14506939592471456332.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEditor.Android.Extensions.dll_2662356921369091614.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEditor.WindowsStandalone.Extensions.dll_13182680453793656010.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.VisualScripting.IonicZip.dll_16804813051944290008.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.VisualScripting.YamlDotNet.dll_9761144244232156452.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.VisualScripting.Antlr3.Runtime.dll_4099317836325291331.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Unsafe.dll_4349120420995006058.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.VisualScripting.IonicZip.dll_13127613082106664597.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.VisualScripting.YamlDotNet.dll_12969769873090106231.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.VisualScripting.Antlr3.Runtime.dll_7307943465183241110.movedfrom
