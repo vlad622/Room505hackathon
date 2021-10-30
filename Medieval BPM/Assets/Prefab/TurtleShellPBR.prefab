@@ -512,6 +512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8488109294268985549}
+  - component: {fileID: 7660638749593868363}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -534,6 +535,20 @@ Transform:
   m_Father: {fileID: 8487766533398629429}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &7660638749593868363
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8493234467915545275}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.52055526
+  m_Height: 1.353987
+  m_Direction: 0
+  m_Center: {x: -0.50120986, y: 0.39898467, z: 0.015558302}
 --- !u!1 &8493266952035872355
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,8 +982,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 8488109294268985549}
-  ragdollBody: {fileID: 0}
+  ragdollBody: {fileID: 8487766533398629429}
   animator: {fileID: 8398854904052656049}
+  collider: {fileID: 7660638749593868363}
   navMeshAgent: {fileID: 5374653607679152004}
 --- !u!195 &5374653607679152004
 NavMeshAgent:

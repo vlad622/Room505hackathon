@@ -127,8 +127,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 3565946905783180966}
-  ragdollBody: {fileID: 0}
+  ragdollBody: {fileID: 3565946905783180966}
   animator: {fileID: 3468222951478337140}
+  collider: {fileID: 4768328274564484881}
+  mob: 1
   navMeshAgent: {fileID: 4815250033148515710}
 --- !u!195 &4815250033148515710
 NavMeshAgent:
@@ -138,7 +140,7 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3563584229018120808}
   m_Enabled: 1
-  m_AgentTypeID: -334000983
+  m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
   m_Acceleration: 8
@@ -224,6 +226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3565946905783180966}
+  - component: {fileID: 4768328274564484881}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -246,6 +249,20 @@ Transform:
   m_Father: {fileID: 3565964575211648812}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &4768328274564484881
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3564281902315414448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.48813057
+  m_Height: 1.1497188
+  m_Direction: 1
+  m_Center: {x: -0.33521393, y: 0.09219081, z: 0.0014412999}
 --- !u!1 &3564295127572910292
 GameObject:
   m_ObjectHideFlags: 0

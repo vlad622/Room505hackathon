@@ -10,11 +10,11 @@ namespace Mobs
         [SerializeField] private Transform spawnersParent;
         [SerializeField] private Transform mobsParent;
         [SerializeField] private float spawnRadius = 2f;
-        [SerializeField] private float maxMobDistance = 50f;
         [SerializeField] private Transform playerPosition;
         
         private Plane[] planes;
         private MobsPool[] mobPools;
+        public float maxMobDistance = 10f;
         
         #region Singleton
 
@@ -60,6 +60,8 @@ namespace Mobs
         {
             if (_spawners.Length <= 0) return;
             
+            Debug.Log("Spawn mob");
+            
             foreach (var pool in mobPools)
             {
                 var newMob = pool.spawnedMobs[0];
@@ -90,6 +92,7 @@ namespace Mobs
         /* Checks if bounds visible on camera */
         public bool IsVisible(Bounds _bounds)
         {
+            //Debug.Log("Is Spawner visible " + GeometryUtility.TestPlanesAABB(planes, _bounds));
             return GeometryUtility.TestPlanesAABB(planes, _bounds);
         }
         
@@ -102,11 +105,13 @@ namespace Mobs
             {
                 var distance = (Camera.main.transform.position - spawner.transform.position).sqrMagnitude;
 
-                if (!IsVisible(spawner.GetComponent<Collider>().bounds) && distance < maxMobDistance)
+                if (!IsVisible(spawner.GetComponent<Collider>().bounds)) //&& distance < maxMobDistance)
                 {
                     result.Add(spawner);
                 }
             }
+            
+            //Debug.Log("Unseen spawners" + result.Count);
 
             return result.ToArray();
         }
@@ -115,18 +120,19 @@ namespace Mobs
         {
             planes = GeometryUtility.CalculateFrustumPlanes(Camera.main);
 
-            var activeMobsCount = 0;
+            var missingMobsCount = 0;
             
             foreach (var pool in mobPools)
             {
-                Debug.Log(pool.MaxActiveNum + " maxActiveNum" + pool.activeMobs.Count +"activeMobs");
-                activeMobsCount = pool.MaxActiveNum - pool.activeMobs.Count;
+                //Debug.Log(pool.MaxActiveNum + " maxActiveNum" + pool.activeMobs.Count +"activeMobs");
+                missingMobsCount = pool.MaxActiveNum - pool.activeMobs.Count;
+                //Debug.Log("missingMobsCount" + missingMobsCount);
             }
             
-            if (activeMobsCount <= 0) return;
-            Transform[] _spawners = GetUnseenSpawners();
+            if (missingMobsCount <= 0) return;
+            var _spawners = GetUnseenSpawners();
            
-            for (int i = 0; i < activeMobsCount; i++)
+            for (int i = 0; i < missingMobsCount; i++)
             {
                 Spawn(_spawners);
             }

@@ -34,6 +34,7 @@ namespace Mobs
 
         public void AddActiveMob(Mob _Mob)
         {
+            Debug.Log("Activate mob");
             activeMobs.Add(_Mob);
             _Mob.gameObject.SetActive(true);
         }
