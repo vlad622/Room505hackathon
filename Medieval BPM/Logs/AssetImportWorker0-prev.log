@@ -15,11 +15,11 @@ E:/Unity/Room505hackathon/Medieval BPM
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-6965
+1635
 Successfully changed project path to: E:/Unity/Room505hackathon/Medieval BPM
 E:/Unity/Room505hackathon/Medieval BPM
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 107.97 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 110.23 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1 (d91830b65d9b)
 [Subsystems] Discovering subsystems at path E:/Unity/Editors/2021.1.7f1/Editor/Data/Resources/UnitySubsystems
@@ -36,68 +36,106 @@ Initialize mono
 Mono path[0] = 'E:/Unity/Editors/2021.1.7f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Unity/Editors/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/Unity/Editors/2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56080
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Unity/Editors/2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000799 seconds.
+Registered in 0.000808 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 111.90 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 113.68 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.892 seconds
+- Completed reload, in  0.884 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001933 seconds.
+Registered in 0.001804 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image E:\Unity\Room505hackathon\Medieval BPM\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image E:\Unity\Room505hackathon\Medieval BPM\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 117.00 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.350 seconds
+- Completed reload, in  0.987 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5020 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.9 MB.
-System memory in use after: 201.3 MB.
+Unloading 4857 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.7 MB.
+System memory in use after: 187.9 MB.
 
-Unloading 157 unused Assets to reduce memory usage. Loaded Objects now: 5453.
-Total: 3.346800 ms (FindLiveObjects: 0.405400 ms CreateObjectMapping: 0.146900 ms MarkObjects: 2.572400 ms  DeleteObjects: 0.221300 ms)
+Unloading 93 unused Assets to reduce memory usage. Loaded Objects now: 5288.
+Total: 2.485200 ms (FindLiveObjects: 0.344000 ms CreateObjectMapping: 0.129600 ms MarkObjects: 1.805600 ms  DeleteObjects: 0.205200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Viking Village/Scenes
-  artifactKey: Guid(3c40643b727c84c9cb37d46aa5fab696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Viking Village/Scenes using Guid(3c40643b727c84c9cb37d46aa5fab696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac42c9ebcb37588c2a4975fec4560a76') in 0.005745 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Viking Village/Scenes/The_Viking_Village.unity
-  artifactKey: Guid(217f50a4b9fbfda41b4f6faee8d22d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Viking Village/Scenes/The_Viking_Village.unity using Guid(217f50a4b9fbfda41b4f6faee8d22d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c05a51a8b82a053b8d2b9d4b6cf8f78') in 0.002601 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.055733 seconds.
   path: Assets/Readme.asset
   artifactKey: Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Readme.asset using Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7e973b6fa40d47942a3ec66b673a10') in 0.012613 seconds 
+Start importing Assets/Readme.asset using Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7e973b6fa40d47942a3ec66b673a10') in 0.018501 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.296344 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(a91e9af9131631245822ee8b1f2ae939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(a91e9af9131631245822ee8b1f2ae939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b06f93508ac6de1121f82b0910d3f800') in 0.001168 seconds 
+  Time since last request: 222.635913 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.001383 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.434275 seconds.
-  path: Assets/Scenes/The_Viking_Village.unity
-  artifactKey: Guid(9c710bea5739a1a4e84717ac92b1cc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/The_Viking_Village.unity using Guid(9c710bea5739a1a4e84717ac92b1cc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6c328a2bc37292c3c18a35d7c4a0bcc') in 0.001472 seconds 
+  Time since last request: 84.152047 seconds.
+  path: Assets/Viking Village
+  artifactKey: Guid(c5b5bcc98acb771468e6400936d19053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Viking Village using Guid(c5b5bcc98acb771468e6400936d19053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '090375800460c3573b3151b395a3502a') in 0.001233 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003181 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Unity\Room505hackathon\Medieval BPM\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Unity\Room505hackathon\Medieval BPM\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 109.94 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+NullReferenceException: Object reference not set to an instance of an object
+  at StarterAssets.PackageChecker.CheckPackage () [0x001c2] in E:\Unity\Room505hackathon\Medieval BPM\Assets\StarterAssets\Editor\PackageChecker\PackageChecker.cs:105 
+
+(Filename: Assets/StarterAssets/Editor/PackageChecker/PackageChecker.cs Line: 105)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.322 seconds
+Platform modules already initialized, skipping
+Default Renderer is missing, make sure there is a Renderer assigned as the default on the current Universal RP asset:VikingVillageUniversal
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogError (object,UnityEngine.Object)
+UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline () (at Library/PackageCache/com.unity.render-pipelines.universal@11.0.0/Runtime/Data/UniversalRenderPipelineAsset.cs:304)
+UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:get_scriptableRendererData () (at Library/PackageCache/com.unity.render-pipelines.universal@11.0.0/Runtime/Data/UniversalRenderPipelineAsset.cs:455)
+UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:get_defaultShader () (at Library/PackageCache/com.unity.render-pipelines.universal@11.0.0/Runtime/Data/UniversalRenderPipelineAsset.cs:801)
+
+(Filename: Library/PackageCache/com.unity.render-pipelines.universal@11.0.0/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 304)
+
+Switching render pipeline 701c012fd7dc64999a5ec8ff0b9b0d69 -> 00000000000000000000000000000000
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4883 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.1 MB.
+System memory in use after: 188.4 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 5424.
+Total: 3.269800 ms (FindLiveObjects: 0.344700 ms CreateObjectMapping: 0.133000 ms MarkObjects: 2.516500 ms  DeleteObjects: 0.274800 ms)
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

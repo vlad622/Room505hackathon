@@ -36,14 +36,6 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
-                },
-                {
-                    "name": "Attack",
-                    "type": "Button",
-                    "id": "7ea8388a-8385-4861-8e15-670053cd35ae",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -220,28 +212,6 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Sprint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a60b5d34-2766-46ca-bc58-f2e6b21d8691",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f8bfb951-543c-4414-abb1-92e24eebe240",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad;Xbox Controller;PS4 Controller",
-                    "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
