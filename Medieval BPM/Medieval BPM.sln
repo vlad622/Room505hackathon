@@ -5,9 +5,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterSystem", "WaterSystem.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{89196f06-4f9e-332c-8334-9c59a8e7c9fb}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponents", "NavMeshComponents.csproj", "{c6fa6dbc-19e4-3fbd-a43c-8e7d1d2e7f77}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterSystem.Editor", "WaterSystem.Editor.csproj", "{a7ae8371-9658-a470-93a1-1945968f8698}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{b56377c4-c165-422a-8d54-795e60b782b5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponentsEditor", "NavMeshComponentsEditor.csproj", "{91602fe0-d568-8d7a-39fa-11033d7264b1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,10 +22,14 @@ Global
 		{3ca6e141-c8c4-60a7-b3fb-fe1fbc2e2b15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89196f06-4f9e-332c-8334-9c59a8e7c9fb}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{89196f06-4f9e-332c-8334-9c59a8e7c9fb}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{c6fa6dbc-19e4-3fbd-a43c-8e7d1d2e7f77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{c6fa6dbc-19e4-3fbd-a43c-8e7d1d2e7f77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a7ae8371-9658-a470-93a1-1945968f8698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{a7ae8371-9658-a470-93a1-1945968f8698}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{b56377c4-c165-422a-8d54-795e60b782b5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{b56377c4-c165-422a-8d54-795e60b782b5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91602fe0-d568-8d7a-39fa-11033d7264b1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91602fe0-d568-8d7a-39fa-11033d7264b1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

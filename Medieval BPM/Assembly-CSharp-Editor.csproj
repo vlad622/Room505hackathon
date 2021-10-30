@@ -797,6 +797,14 @@
       <Project>{a7ae8371-9658-a470-93a1-1945968f8698}</Project>
       <Name>WaterSystem.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{c6fa6dbc-19e4-3fbd-a43c-8e7d1d2e7f77}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{91602fe0-d568-8d7a-39fa-11033d7264b1}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

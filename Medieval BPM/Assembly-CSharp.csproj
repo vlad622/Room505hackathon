@@ -67,12 +67,16 @@
      <Compile Include="Assets\Viking Village\Standard Assets\Utility\FOVKick.cs" />
      <Compile Include="Assets\Viking Village\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
      <Compile Include="Assets\Viking Village\Scripts\FreeCamera.cs" />
+     <Compile Include="Assets\Scripts\MobSpawner.cs" />
+     <Compile Include="Assets\Scripts\MobsPool.cs" />
+     <Compile Include="Assets\Scripts\Mob.cs" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\Caustics.shader" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\WaterFXFoamOnly.shader" />
      <None Include="Assets\Viking Village\Boat Attack Water System\package.json" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\GerstnerWaves.hlsl" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\WaterCommon.hlsl" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\WaterLighting.hlsl" />
+     <None Include="Assets\RPG Monster Wave PBR\Shaders\PBRMaskTint.shader" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\CommonUtilities.hlsl" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\WaterTessellation.hlsl" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\WaterInput.hlsl" />
@@ -802,6 +806,14 @@
     <ProjectReference Include="WaterSystem.Editor.csproj">
       <Project>{a7ae8371-9658-a470-93a1-1945968f8698}</Project>
       <Name>WaterSystem.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{c6fa6dbc-19e4-3fbd-a43c-8e7d1d2e7f77}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{91602fe0-d568-8d7a-39fa-11033d7264b1}</Project>
+      <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
