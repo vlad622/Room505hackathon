@@ -41,17 +41,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\MobsPool.cs" />
      <Compile Include="Assets\Viking Village\Standard Assets\Utility\LerpControlledBob.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
      <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
      <Compile Include="Assets\Viking Village\Scripts\ControlSwitch.cs" />
      <Compile Include="Assets\Viking Village\Standard Assets\Utility\CameraRefocus.cs" />
      <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
+     <Compile Include="Assets\Scripts\Mob.cs" />
      <Compile Include="Assets\Viking Village\Scripts\ForceToAcessibleVolume.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
      <Compile Include="Assets\Viking Village\Standard Assets\Utility\CurveControlledBob.cs" />
      <Compile Include="Assets\Viking Village\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+     <Compile Include="Assets\AM\PlayerLogic.cs" />
      <Compile Include="Assets\Scripts\SwordAnimator.cs" />
      <Compile Include="Assets\Viking Village\Scripts\MouseLock.cs" />
      <Compile Include="Assets\Viking Village\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
@@ -61,15 +64,15 @@
      <Compile Include="Assets\Viking Village\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
+     <Compile Include="Assets\AM\SwordDamage.cs" />
      <Compile Include="Assets\Viking Village\Scripts\twinkle.cs" />
      <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\AM\BPMController.cs" />
+     <Compile Include="Assets\Scripts\MobSpawner.cs" />
      <Compile Include="Assets\Viking Village\Standard Assets\Utility\FOVKick.cs" />
      <Compile Include="Assets\Viking Village\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
      <Compile Include="Assets\Viking Village\Scripts\FreeCamera.cs" />
-     <Compile Include="Assets\Scripts\MobSpawner.cs" />
-     <Compile Include="Assets\Scripts\MobsPool.cs" />
-     <Compile Include="Assets\Scripts\Mob.cs" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\Caustics.shader" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\WaterFXFoamOnly.shader" />
      <None Include="Assets\Viking Village\Boat Attack Water System\package.json" />
@@ -807,13 +810,13 @@
       <Project>{a7ae8371-9658-a470-93a1-1945968f8698}</Project>
       <Name>WaterSystem.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{c6fa6dbc-19e4-3fbd-a43c-8e7d1d2e7f77}</Project>
-      <Name>NavMeshComponents</Name>
-    </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
       <Project>{91602fe0-d568-8d7a-39fa-11033d7264b1}</Project>
       <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{c6fa6dbc-19e4-3fbd-a43c-8e7d1d2e7f77}</Project>
+      <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
