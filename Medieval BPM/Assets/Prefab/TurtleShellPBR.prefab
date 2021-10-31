@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8487876889792242363}
   m_Layer: 0
   m_Name: HornL01
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 8490444621100662367}
   m_Layer: 0
   m_Name: HornLTip02
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 8487945496631989917}
   m_Layer: 0
   m_Name: Shell
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 8488092704672324769}
   m_Layer: 0
   m_Name: Eyeball
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 8487743774496492121}
   m_Layer: 0
   m_Name: HornMid03
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 8487720712939382137}
   m_Layer: 0
   m_Name: HornRTip04
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 8487822089333591363}
   m_Layer: 0
   m_Name: BottomCover
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 8490912419142439121}
   m_Layer: 0
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 8488130541296354035}
   m_Layer: 0
   m_Name: HornMid02
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 8490807243275081339}
   m_Layer: 0
   m_Name: HornL02
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 8490939656304814699}
   m_Layer: 0
   m_Name: Spine02
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 8490843689572870969}
   m_Layer: 0
   m_Name: HornRTip02
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 8488081007298807577}
   m_Layer: 0
   m_Name: HornR03
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -422,7 +422,7 @@ GameObject:
   - component: {fileID: 8487756724430839843}
   m_Layer: 0
   m_Name: HornR02
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 8490502678164779315}
   m_Layer: 0
   m_Name: HornMidTip03
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 8490969457768983911}
   m_Layer: 0
   m_Name: HornL03
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -513,9 +513,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8488109294268985549}
   - component: {fileID: 7660638749593868363}
+  - component: {fileID: 7872856599828774518}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -545,10 +546,26 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.52055526
-  m_Height: 1.353987
-  m_Direction: 0
-  m_Center: {x: -0.50120986, y: 0.39898467, z: 0.015558302}
+  m_Radius: 0.7553718
+  m_Height: 2.3878963
+  m_Direction: 1
+  m_Center: {x: -0.48171538, y: 0.83756006, z: 0.015558298}
+--- !u!54 &7872856599828774518
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8493234467915545275}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8493266952035872355
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +577,7 @@ GameObject:
   - component: {fileID: 8490783343991103531}
   m_Layer: 0
   m_Name: HornMidTip02
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -590,7 +607,7 @@ GameObject:
   - component: {fileID: 8490833354522145375}
   m_Layer: 0
   m_Name: HornRTip03
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -620,7 +637,7 @@ GameObject:
   - component: {fileID: 8490442066136639973}
   m_Layer: 0
   m_Name: HornMid01
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -651,7 +668,7 @@ GameObject:
   - component: {fileID: 8487906703221340623}
   m_Layer: 0
   m_Name: HornLTip03
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -681,7 +698,7 @@ GameObject:
   - component: {fileID: 8488081347074659145}
   m_Layer: 0
   m_Name: HornR04
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -712,7 +729,7 @@ GameObject:
   - component: {fileID: 8487840813606497663}
   m_Layer: 0
   m_Name: HornL04
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -743,7 +760,7 @@ GameObject:
   - component: {fileID: 8487761744078095529}
   m_Layer: 0
   m_Name: HornLTip04
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -773,7 +790,7 @@ GameObject:
   - component: {fileID: 8490429322753189459}
   m_Layer: 0
   m_Name: HornRTip01
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -803,7 +820,7 @@ GameObject:
   - component: {fileID: 8488026197114535957}
   m_Layer: 0
   m_Name: Spine01
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -835,7 +852,7 @@ GameObject:
   - component: {fileID: 8488154559883427161}
   m_Layer: 0
   m_Name: HornR01
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -866,7 +883,7 @@ GameObject:
   - component: {fileID: 8490435239567185947}
   m_Layer: 0
   m_Name: UpperCover
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -896,7 +913,7 @@ GameObject:
   - component: {fileID: 8490828536043974433}
   m_Layer: 0
   m_Name: HornMidTip01
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -929,7 +946,7 @@ GameObject:
   - component: {fileID: 5374653607679152004}
   m_Layer: 0
   m_Name: TurtleShellPBR
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -985,6 +1002,7 @@ MonoBehaviour:
   ragdollBody: {fileID: 8487766533398629429}
   animator: {fileID: 8398854904052656049}
   collider: {fileID: 7660638749593868363}
+  animation: 0
   navMeshAgent: {fileID: 5374653607679152004}
 --- !u!195 &5374653607679152004
 NavMeshAgent:
@@ -1020,7 +1038,7 @@ GameObject:
   - component: {fileID: 8375682017203299599}
   m_Layer: 0
   m_Name: TurtleShell
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1133,7 +1151,7 @@ GameObject:
   - component: {fileID: 8490558975143880929}
   m_Layer: 0
   m_Name: HornLTip01
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

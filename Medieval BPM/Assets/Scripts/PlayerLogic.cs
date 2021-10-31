@@ -32,21 +32,45 @@ public class PlayerLogic : MonoBehaviour
     [SerializeField] private Image healthImage;
     [SerializeField] private Image shieldImage;
     [SerializeField] private bool sadistAchievement = false;
+    [SerializeField] private SwordAnimator swordAnimator;
+    [SerializeField] private SwordCollision swordCollider;
+    
     private bool defending=false;
+    private bool activateHealing=false;
     
     // Start is called before the first frame update
     void Start()
     {
-        attack.action.started+= AttackActionOnstarted;
-        damage.action.started+= DamageActionOnstarted;
+        attack.action.started += AttackActionOnstarted;
+        damage.action.started += DamageActionOnstarted;
+        swordAnimator.SwordInDamageZone += AttackStarted;
+        swordAnimator.SwordOutDamageZone += AttackEnded;
+    }
+
+    private void AttackStarted()
+    {
+        Debug.Log("Active heeling: " + activateHealing);
+        swordCollider.OnMobCollision += HealOnSuccessfulAttack;
+    }
+
+    private void AttackEnded()
+    {
         
+        swordCollider.OnMobCollision -= HealOnSuccessfulAttack;
+    }
+
+    private void HealOnSuccessfulAttack()
+    {
+        if (activateHealing)
+            Heal();
     }
 
     private void AttackActionOnstarted(InputAction.CallbackContext obj)
     {
-        Debug.Log("GetMouseButtonDown");
+        //Debug.Log("GetMouseButtonDown");
         SwordAnimator.Play("Attack", 0, 0.25f);
-        Healing();
+
+        activateHealing = BPMController.Instance.GetInBeat();
         defending = true;
     }
     
@@ -56,7 +80,7 @@ public class PlayerLogic : MonoBehaviour
         Damage(20);
     }
 
-    public void Healing()
+    public void Heal()
     {
         Debug.Log("Healing enter");
         int ammount = 10;
@@ -105,6 +129,8 @@ public class PlayerLogic : MonoBehaviour
             //TODO acievement
         }
     }
+
+    
     
 
     // Update is called once per frame

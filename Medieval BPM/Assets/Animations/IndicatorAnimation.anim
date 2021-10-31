@@ -203,19 +203,17 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.25
+  - time: 0.73333335
     functionName: InBeat
     data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 40a94a3b0f0cd744e991ffe2f6d192c9,
-      type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: -1
     messageOptions: 0
   - time: 0.75
     functionName: InBeat
     data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 40a94a3b0f0cd744e991ffe2f6d192c9,
-      type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 1
     messageOptions: 0

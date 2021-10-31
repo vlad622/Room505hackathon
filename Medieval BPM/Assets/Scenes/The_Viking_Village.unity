@@ -8959,42 +8959,6 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!84 &203242757
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: WaterDepthMap
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 2
-  m_ColorFormat: 142
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &203343484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45788,7 +45752,7 @@ MonoBehaviour:
   m_OverrideArea: 1
   m_Area: 1
   m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
+  m_AffectedAgents: 
 --- !u!1 &919782086 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: a2ee3a78d0b205f40a3fe9f728e70ba3,
@@ -73593,6 +73557,42 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1462723391}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &1463198406
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterDepthMap
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 3
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 2
+  m_ColorFormat: 142
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1463244019 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 9c17d66b88dfce54d99d6710ec954c13,
@@ -91742,10 +91742,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3833083525666342970, guid: 9ed46828caf4aac49ba8f91d74a64dc8,
         type: 3}
-      propertyPath: m_IsTrigger
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3833083525666342970, guid: 9ed46828caf4aac49ba8f91d74a64dc8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3833083525666342970, guid: 9ed46828caf4aac49ba8f91d74a64dc8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9ed46828caf4aac49ba8f91d74a64dc8, type: 3}
 --- !u!4 &1845289701 stripped
 Transform:
@@ -91778,6 +91784,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &1845289704
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845289702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.15509798
+  m_Height: 1.3148398
+  m_Direction: 1
+  m_Center: {x: -0.0011338624, y: 0.218364, z: 0.0001821856}
 --- !u!114 &1845289707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91788,6 +91808,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9378c9b15d51a346a0d5c47a7bae154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1845289708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845289702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae588e7aa29953c4d8444cf78d0336a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1845896375 stripped
@@ -108069,6 +108101,8 @@ MonoBehaviour:
   healthImage: {fileID: 986182223}
   shieldImage: {fileID: 986182222}
   sadistAchievement: 0
+  swordAnimator: {fileID: 1845289707}
+  swordCollider: {fileID: 1845289708}
 --- !u!114 &8616685848393333877
 MonoBehaviour:
   m_ObjectHideFlags: 0

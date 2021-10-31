@@ -1,20 +1,34 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BPMController : MonoBehaviour
 {
-    public int BPM;
+    [SerializeField] private int BPM;
     //public Animation AnimationIndicator;
-    public Animator animtor;
-    public AudioSource AudioSource;
+    [SerializeField] private Animator animtor;
+    [SerializeField] private AudioSource AudioSource;
 
     //public  anim
     private float bpmInterval;
     private bool inBeat;
     private Image img;
+
+
+    #region Singleton
+
+    public static BPMController Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    #endregion
     
     // Start is called before the first frame update
     void Start()
@@ -52,6 +66,11 @@ public class BPMController : MonoBehaviour
             inBeat = false;
             Debug.Log("InBeat : "+inBeat);
         }
+    }
+
+    public bool GetInBeat()
+    {
+        return inBeat;
     }
 
     private void AnimatorSpeed()
