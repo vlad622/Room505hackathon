@@ -1,18 +1,20 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using Mobs;
 using UnityEngine;
 
 public class SwordCollision : MonoBehaviour
 {
-    public event Action OnMobCollision;
+    public delegate void MobCollision (Mob mob);
+    public event MobCollision OnMobCollision;
     private void OnCollisionEnter(Collision other)
     {
+        var mobBody = other.gameObject;
         Debug.Log("OnCollisionEneter");
-        if (other.gameObject.tag == "Enemy")
+        if (mobBody.CompareTag("Enemy"))
         {
-            Debug.Log("Found Enemy");
-            OnMobCollision?.Invoke();
+            var mob = mobBody.GetComponentInParent<Mob>();
+            //Debug.Log("Found Enemy");
+            OnMobCollision?.Invoke(mob);
         }
     }
 }

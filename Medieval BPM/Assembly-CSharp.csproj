@@ -73,6 +73,8 @@
      <Compile Include="Assets\Scripts\BPMController.cs" />
      <Compile Include="Assets\Scripts\PlayerLogic.cs" />
      <Compile Include="Assets\Scripts\SwordCollision.cs" />
+     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
+     <Compile Include="Assets\Scripts\MobCollider.cs" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\Caustics.shader" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\WaterFXFoamOnly.shader" />
      <None Include="Assets\Viking Village\Boat Attack Water System\package.json" />

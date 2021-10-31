@@ -25,6 +25,7 @@ namespace Mobs
         {
             spawnedMobs.Add(_Mob);
             _Mob.gameObject.SetActive(false);
+            _Mob.ResetHealth();
         }
 
         public void RemoveSpawnedMob(Mob _Mob)
@@ -37,6 +38,7 @@ namespace Mobs
             Debug.Log("Activate mob");
             activeMobs.Add(_Mob);
             _Mob.gameObject.SetActive(true);
+            _Mob.ResetHealth();
         }
 
         public void RemoveActiveMob(Mob _Mob)

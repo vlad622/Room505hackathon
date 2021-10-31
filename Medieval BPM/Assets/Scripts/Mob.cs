@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.InputSystem.Processors;
 
 namespace Mobs
 {
@@ -10,6 +11,14 @@ namespace Mobs
         Walk = 1,
         Attack = 2
     }
+
+    enum MobType
+    {
+        Skeleton,
+        Slime,
+        Turtle
+    }
+    
     public class Mob : MonoBehaviour
     {
         [SerializeField] private Transform body;
@@ -17,12 +26,30 @@ namespace Mobs
         [SerializeField] private Animator animator;
         [SerializeField] private Collider collider;
         [SerializeField] private MobAnimation animation;
+        [SerializeField] private MobType type;
         [NonSerialized] private float attackDistance = 5f;
         public int PoolID { get; set; }
         public Transform PlayerPosition { private get; set; }
         public NavMeshAgent navMeshAgent;
 
         private float distanceToPlayer;
+        private int health = 100;
+        private bool dead = false;
+
+        public void GetDamage(int damage)
+        {
+            if (health > damage)
+                health -= damage;
+            else
+                Die();
+        }
+
+        private void Die()
+        {
+            dead = true;
+            navMeshAgent.enabled = false;
+            animator.Play("Die");
+        }
 
         /* Resets position of body and ragdoll to 0 relative to npc root */
         public void ResetPosition()
@@ -31,6 +58,13 @@ namespace Mobs
             ragdollBody.transform.position = gameObject.transform.position;
         }
         
+        
+        /* Resets position of body and ragdoll to 0 relative to npc root */
+        public void ResetHealth()
+        {
+            dead = false;
+            health = 100;
+        }
 
         /* Selects between Idle and Walk animation when npc moves */
         private void UpdateAnimation()
@@ -52,27 +86,30 @@ namespace Mobs
         
         void FixedUpdate()
         {
-            distanceToPlayer = (Camera.main.transform.position -
-                           navMeshAgent.transform.position).magnitude;
-            //Debug.Log(distanceToPlayer+ " " + attackDistance);
-            
-            // Chooses next destination point 
-            if (navMeshAgent.isOnNavMesh)
+            if (!dead)
             {
-                if (distanceToPlayer < attackDistance)
+                distanceToPlayer = (Camera.main.transform.position -
+                                    navMeshAgent.transform.position).magnitude;
+                //Debug.Log(distanceToPlayer+ " " + attackDistance);
+
+                // Chooses next destination point 
+                if (navMeshAgent.isOnNavMesh)
                 {
-                    Attack();
+                    if (distanceToPlayer < attackDistance)
+                    {
+                        Attack();
+                    }
+                    else
+                    {
+                        GoToPlayer();
+                    }
                 }
                 else
                 {
-                    GoToPlayer();
+                    animation = MobAnimation.Idle;
                 }
             }
-            else
-            {
-                animation = MobAnimation.Idle;
-            }
-            
+
             UpdateAnimation();
         }
     }

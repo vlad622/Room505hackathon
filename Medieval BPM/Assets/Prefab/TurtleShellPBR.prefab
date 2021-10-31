@@ -514,6 +514,7 @@ GameObject:
   - component: {fileID: 8488109294268985549}
   - component: {fileID: 7660638749593868363}
   - component: {fileID: 7872856599828774518}
+  - component: {fileID: 4753081438888808676}
   m_Layer: 0
   m_Name: Body
   m_TagString: Enemy
@@ -564,8 +565,20 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &4753081438888808676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8493234467915545275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457fb9fc6c7c90a47abd2162ff15fd1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8493266952035872355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,6 +1016,7 @@ MonoBehaviour:
   animator: {fileID: 8398854904052656049}
   collider: {fileID: 7660638749593868363}
   animation: 0
+  type: 2
   navMeshAgent: {fileID: 5374653607679152004}
 --- !u!195 &5374653607679152004
 NavMeshAgent:

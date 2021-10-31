@@ -59,12 +59,12 @@ public class BPMController : MonoBehaviour
         if (value==1)
         {
             inBeat = true;
-            Debug.Log("InBeat : "+inBeat);
+            //Debug.Log("InBeat : "+inBeat);
         }
         else
         {
             inBeat = false;
-            Debug.Log("InBeat : "+inBeat);
+           // Debug.Log("InBeat : "+inBeat);
         }
     }
 
