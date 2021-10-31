@@ -54,7 +54,6 @@
      <Compile Include="Assets\Viking Village\Standard Assets\Utility\CurveControlledBob.cs" />
      <Compile Include="Assets\Viking Village\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
-     <Compile Include="Assets\AM\PlayerLogic.cs" />
      <Compile Include="Assets\Scripts\SwordAnimator.cs" />
      <Compile Include="Assets\Viking Village\Scripts\MouseLock.cs" />
      <Compile Include="Assets\Viking Village\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
@@ -64,15 +63,15 @@
      <Compile Include="Assets\Viking Village\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
-     <Compile Include="Assets\AM\SwordDamage.cs" />
      <Compile Include="Assets\Viking Village\Scripts\twinkle.cs" />
      <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-     <Compile Include="Assets\AM\BPMController.cs" />
      <Compile Include="Assets\Scripts\MobSpawner.cs" />
      <Compile Include="Assets\Viking Village\Standard Assets\Utility\FOVKick.cs" />
      <Compile Include="Assets\Viking Village\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
      <Compile Include="Assets\Viking Village\Scripts\FreeCamera.cs" />
+     <Compile Include="Assets\Scripts\BPMController.cs" />
+     <Compile Include="Assets\Scripts\PlayerLogic.cs" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\Caustics.shader" />
      <None Include="Assets\Viking Village\Boat Attack Water System\Shaders\WaterFXFoamOnly.shader" />
      <None Include="Assets\Viking Village\Boat Attack Water System\package.json" />
